@@ -133,4 +133,52 @@ Existe una brecha de aproximadamente un tercio de la capacidad del equipo, por l
   - Requiere tiempo de aprendizaje de la API.
 - **Impacto en el proyecto:** libera tiempo para pruebas y para el flujo principal; el costo monetario es bajo o nulo en esta etapa.
 
+### 3.3 Trade-off 3: Simplicidad vs. escalabilidad
+**Opción A**: Monolito simple
+**Explicación:** una sola aplicación y una sola base de datos, organizada en módulos internos.
+**Ventajas:**
+- Rápido de desarrollar, probar y desplegar.
+- Menor complejidad operativa para un equipo de 3 personas.
+- Suficiente para el rango esperado de un negocio pequeño.
+**Desventajas:**
+- Realizar partes específicas por separado es más difícil.
+- Si crece mucho, puede requerir refactorización.
+**Impacto en el proyecto:** permite concentrar el esfuerzo en las funcionalidades y no en la infraestructura.
+**Opción B:** Microservicios
+**Explicación:* separar pedidos, pagos, notificaciones e inventario en servicios independientes.
+**Ventajas:**
+- Escalabilidad independiente por servicio.
+- Facilita que equipos distintos trabajen en paralelo a futuro.
+**Desventajas:**
+- Mayor complejidad de despliegue, comunicación entre servicios y monitoreo.
+- Aumenta de forma notable el trabajo de configuración.
+- Excesivo para un equipo pequeño y un volumen bajo de usuarios.
+**Impacto en el proyecto:** probablemente consumiría gran parte de las horas restantes sin aportar valor visible al cliente en este release.
 
+  ### 3.4 Trade-off 4: Alcance completo vs. entrega incremental
+
+**Opción A: Entregar todo el alcance en un solo release**
+
+**Explicación:** intentar completar las cinco funcionalidades pendientes antes de la fecha.
+**Ventajas:**
+
+  * El cliente recibe el producto "completo".
+**Desventajas:**
+
+  * Con un déficit de \-57 horas, implica recortar calidad, trabajar sin descanso o incumplir la fecha.
+  * Riesgo de agotamiento del equipo.
+**Impacto en el proyecto:** alta probabilidad de entrega tardía o con defectos.
+
+**Opción B: Entregar un MVP y planificar una segunda versión**
+
+**Explicación:** el primer release incluye solo lo indispensable (pedidos, pagos y notificaciones); panel de administración avanzado, inventario y reportes pasan a una versión 2.
+**Ventajas:**
+
+  * Cumple la fecha con un producto utilizable.
+  * Permite obtener retroalimentación real del cliente temprano.
+  * Reduce el riesgo de errores por apuro.
+**Desventajas:**
+
+  * El cliente debe aceptar que algunas funciones llegan después.
+  * Requiere una conversación honesta sobre expectativas.
+**Impacto en el proyecto:** el alcance se ajusta a la capacidad real del equipo.
