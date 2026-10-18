@@ -316,4 +316,11 @@ Entregar un MVP en la fecha acordada, que incluya pedidos, pagos (mediante un pr
 
 Fue **moderadamente difícil**. La dificultad no estuvo en identificar las opciones, sino en aceptar que **no se puede tener todo**: cada funcionalidad pospuesta implicaba admitir una limitación frente al cliente. También hubo tensión entre querer "entregar más" y querer "entregar mejor". Al poner los números sobre la mesa (déficit de ~57 horas), la discusión pasó de opiniones a criterios objetivos y la decisión se volvió mucho más clara.
 
+### 6.2 ¿Qué aprendieron sobre trade-offs?
+
+- Todo trade-off implica **ganar algo y renunciar a algo**; no existe una opción "gratis".
+- La mejor decisión depende del **contexto y las restricciones**, no de una regla universal. Un monolito es correcto aquí, pero podría no serlo en otro proyecto.
+- Es fundamental **identificar qué es crítico** (lo que no se negocia) y qué es deseable (lo que se puede diferir).
+- Las decisiones deben **documentarse y justificarse**, porque sus consecuencias se mantienen en el tiempo.
+- Los trade-offs están **conectados entre sí**: reducir el alcance libera tiempo que permite invertir en calidad.  
 
