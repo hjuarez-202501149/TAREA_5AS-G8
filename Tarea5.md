@@ -10,7 +10,7 @@
 |-----|--------|--------|--------------------|
 | 1 | Hans Alexander Juárez Cano | 202501149| Líder técnico / facilitador de la negociación |
 | 2 | Miguel Tomás López Nix | 202230781 | Analista de calidad y riesgos |
-| 3 | Hassan Alfredo Antony Lopez Guarchaj | | Analista de costos y planificación |
+| 3 | Hassan Alfredo Antony Lopez Guarchaj | 202500233 | Analista de costos y planificación |
 
 ---
 
