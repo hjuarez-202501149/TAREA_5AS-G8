@@ -182,3 +182,15 @@ Existe una brecha de aproximadamente un tercio de la capacidad del equipo, por l
   * El cliente debe aceptar que algunas funciones llegan después.
   * Requiere una conversación honesta sobre expectativas.
 **Impacto en el proyecto:** el alcance se ajusta a la capacidad real del equipo.
+
+### 3.5 Resumen comparativo
+
+|Trade-off|Opción favorecida|Motivo principal|
+|-|-|-|
+|Rapidez vs. calidad|B (pruebas en flujos críticos)|El costo de un error en pagos supera el ahorro de tiempo|
+|Costo vs. funcionalidad|B (terceros + MVP)|Es la única forma realista de cerrar el déficit de horas|
+|Simplicidad vs. escalabilidad|A (monolito modular)|Volumen bajo y equipo pequeño|
+|Alcance completo vs. incremental|B (MVP + versión 2)|Respeta fecha y calidad|
+
+\
+  
