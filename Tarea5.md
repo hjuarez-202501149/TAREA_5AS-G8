@@ -21,7 +21,7 @@
 3. [Análisis de alternativas](#3-análisis-de-alternativas)
 4. [Negociación técnica](#4-negociación-técnica)
 5. [Decisión final](#5-decisión-final)
-6. [Conclusión](#6-conclusión)
+6. [Reflexión](#6-reflexión)
 
 ---
 
@@ -311,8 +311,9 @@ Entregar un MVP en la fecha acordada, que incluya pedidos, pagos (mediante un pr
 
 ---
 
-### 6 Conclusión
+### 6 Reflexión
+### 6.1 ¿Qué tan difícil fue tomar la decisión?
 
-El análisis permitió pasar de un problema difuso ("no nos alcanza el tiempo") a una decisión fundamentada que sería: reducir el alcance, proteger la calidad de lo crítico y simplificar la arquitectura. La comunicación asertiva fue clave para que las tres posturas se transformaran en un acuerdo común basado en criterios objetivos.
+Fue **moderadamente difícil**. La dificultad no estuvo en identificar las opciones, sino en aceptar que **no se puede tener todo**: cada funcionalidad pospuesta implicaba admitir una limitación frente al cliente. También hubo tensión entre querer "entregar más" y querer "entregar mejor". Al poner los números sobre la mesa (déficit de ~57 horas), la discusión pasó de opiniones a criterios objetivos y la decisión se volvió mucho más clara.
 
 
