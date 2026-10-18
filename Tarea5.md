@@ -6,11 +6,11 @@
 
 ## Integrantes
 
-| No. | Nombre | Rol en el análisis |
-|-----|--------|--------------------|
-| 1 | Hans Alexander Juárez Cano  202501149| Líder técnico / facilitador de la negociación |
-| 2 | Miguel Tomás López Nix| Analista de calidad y riesgos |
-| 3 | Hassan Alfredo Antony Lopez Guarchaj | Analista de costos y planificación |
+| No. | Nombre | Carnet |Rol en el análisis |
+|-----|--------|--------|--------------------|
+| 1 | Hans Alexander Juárez Cano | 202501149| Líder técnico / facilitador de la negociación |
+| 2 | Miguel Tomás López Nix | 202230781 | Analista de calidad y riesgos |
+| 3 | Hassan Alfredo Antony Lopez Guarchaj | | Analista de costos y planificación |
 
 ---
 
@@ -21,7 +21,7 @@
 3. [Análisis de alternativas](#3-análisis-de-alternativas)
 4. [Negociación técnica](#4-negociación-técnica)
 5. [Decisión final](#5-decisión-final)
-6. [Reflexión](#6-reflexión)
+6. [Conclusión](#6-conclusión)
 
 ---
 
@@ -251,3 +251,68 @@ La suma de ahorros (\~60–70 horas) supera el déficit y permite reservar horas
 4. Si el equipo no tiene experiencia con pagos, **usar un proveedor reduce riesgo y tiempo**.
 5. Si el volumen esperado es bajo, **un monolito modular es suficiente** y deja la puerta abierta a evolucionar después.
 6. Por lo tanto, la combinación más racional es **MVP + terceros + monolito modular + pruebas en flujos críticos**.
+
+### 4.4 Concesiones mutuas
+
+| Integrante | Concesión | Lo que ganó |
+|------------|-----------|-------------|
+| Hassan Lopez | Aceptó limitar las pruebas automatizadas a los flujos críticos | Garantía de que  los pedidos y pagos estarán cubiertos |
+| Miguel López | Aceptó reservar horas de pruebas dentro del plan | Un plan realista que se puede hacer en las horas disponibles |
+| Hans Juárez | Aceptó comunicar al cliente sobre el desarrollo de manera honesta | Apoyo del equipo en un alcance viable |
+
+---
+
+## 5. Decisión final
+
+### 5.1 Solución elegida
+
+Entregar un MVP en la fecha acordada, que incluya pedidos, pagos (mediante un proveedor externo) y notificaciones, construido como monolito modular, con pruebas automatizadas en los flujos críticos y con un plan de versión 2 para panel avanzado, inventario y reportes.
+
+| Aspecto | Decisión |
+|---------|----------|
+| Alcance del release 1 | Registro/login, catálogo, carrito, pedidos, pago con proveedor externo, notificaciones |
+| Alcance diferido (versión 2) | Panel de administración avanzado, inventario, reportes de ventas |
+| Arquitectura | Monolito modular |
+| Calidad | Pruebas automatizadas en pedido, pago y notificación; revisión de código entre pares |
+| Dependencias externas | Pasarela de pago y autenticación de terceros (capas gratuitas) |
+
+### 5.2 Distribución estimada de horas
+
+| Actividad | Horas |
+|-----------|-------|
+| Pedidos y flujo del carrito | 25 |
+| Integración de pagos | 25 |
+| Notificaciones | 15 |
+| Pruebas automatizadas de flujos críticos | 20 |
+| Revisión de código y correcciones | 10 |
+| Despliegue y documentación | 8 |
+| Margen para imprevistos | 5 |
+| **Total** | **108** |
+
+### 5.3 Justificación
+
+- Es la única opción que se puede hacer en las horas disponibles sin disminuir la confiabilidad de lo esencial.
+- Protege el flujo que genera ingresos al cliente.
+- Reduce el riesgo técnico al apoyarse en proveedores especializados.
+- Evita complejidad innecesaria en la arquitectura.
+- Mantiene una relación transparente con el cliente al acordar expectativas realistas.
+
+### 5.4 Consecuencias de la decisión
+
+| Tipo | Consecuencia |
+|------|--------------|
+| Positiva | Entrega puntual de un producto funcional y confiable |
+| Positiva | Retroalimentación temprana del cliente como base para la versión 2 |
+| Positiva | Menor estrés y riesgo de agotamiento para el equipo |
+| Negativa | El cliente no tendrá inventario ni reportes en la primera versión |
+| Negativa | Dependencia de límites y condiciones de los proveedores externos |
+| Negativa | Posible refactorización futura si el volumen crece mucho |
+| Mitigación | Acordar por escrito el alcance del MVP y el cronograma de la versión 2; diseñar módulos con límites claros para facilitar una posible separación futura |
+
+---
+
+### 6 Conclusión
+
+El análisis permitió pasar de un problema difuso ("no nos alcanza el tiempo") a una decisión fundamentada que sería: reducir el alcance, proteger la calidad de lo crítico y simplificar la arquitectura. La comunicación asertiva fue clave para que las tres posturas se transformaran en un acuerdo común basado en criterios objetivos.
+
+
