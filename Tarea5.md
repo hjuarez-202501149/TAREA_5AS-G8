@@ -194,3 +194,60 @@ Existe una brecha de aproximadamente un tercio de la capacidad del equipo, por l
 
 \
   
+# 4\. Negociación técnica
+
+### 4.1 Posiciones iniciales del equipo
+
+|Integrante|Postura inicial|Preocupación principal|
+|-|-|-|
+|Hans Juárez|Entregar el MVP con terceros y monolito|Cumplir la fecha sin sacrificar lo esencial|
+|Hassan Lopez|Priorizar pruebas automatizadas, incluso si se reduce el alcance|Evitar errores en pedidos y pagos|
+|Miguel López|Reducir costos y horas usando servicios existentes|Que el plan quepa en las \~108 horas disponibles|
+
+### 4.2 Proceso de negociación
+
+El equipo aplicó los principios de comunicación asertiva vistos en clase:
+
+* **Expresar la postura propia con claridad y sin agresividad** (por ejemplo: *"Considero que debemos probar el flujo de pagos porque un error afecta directamente al cliente"*).
+* **Escuchar activamente** antes de responder y reformular lo entendido.
+* **Separar la persona del problema:** se discutieron datos y riesgos, no preferencias personales.
+* **Buscar un acuerdo basado en criterios objetivos:** horas disponibles, riesgo y valor para el cliente.
+
+Se acordó evaluar cada opción con los mismos criterios.
+
+|Criterio|Peso|
+|-|-|
+|Cumplimiento de la fecha|30 %|
+|Calidad y confiabilidad del flujo crítico|30 %|
+|Viabilidad con el equipo y la experiencia disponibles|25 %|
+|Costo|15 %|
+
+### 4.3 Argumentos técnicos
+
+#### 4.3.1 Uso de evidencia
+
+* **Datos del proyecto:** el déficit estimado es de \~57 horas sobre \~165 necesarias, lo que equivale a cerca del 35 %; ningún ajuste menor de productividad lo cierra.
+* **Ley de Brooks:** añadir más gente o presión a un proyecto atrasado tiende a retrasarlo más; por lo tanto, la solución no es "trabajar más horas" sino reducir el alcance.
+* **Costo de defectos tardíos:** en ingeniería de software es ampliamente aceptado que corregir un defecto es más caro cuanto más tarde se detecta; por eso conviene probar temprano los flujos críticos.
+* **Principio de no reinventar la rueda:** pagos y autenticación son problemas resueltos por proveedores especializados; construirlos desde cero introduce riesgos de seguridad sin aportar valor diferencial.
+* **Principio KISS / YAGNI:** una arquitectura de microservicios para un negocio pequeño añade complejidad que no se necesita todavía.
+
+#### 4.3.2 Análisis de impacto
+
+|Decisión|Impacto en tiempo|Impacto en calidad|Impacto en el cliente|
+|-|-|-|-|
+|MVP en lugar de alcance completo|Ahorra \~35–40 horas|Más tiempo para pruebas|Recibe lo esencial a tiempo; el resto después|
+|Servicios de terceros|Ahorra \~15–20 horas|Componentes más seguros|Menor personalización|
+|Monolito modular|Ahorra \~10 horas de configuración|Más simple de probar|Sin efecto visible|
+|Pruebas en flujos críticos|Cuesta \~15–20 horas|Reduce errores en producción|Mayor confianza|
+
+La suma de ahorros (\~60–70 horas) supera el déficit y permite reservar horas para pruebas.
+
+#### 4.3.3 Razonamiento lógico
+
+1. Si el tiempo y el equipo son fijos, **la única variable ajustable es el alcance**.
+2. Si el alcance se reduce, debe conservarse lo que genera valor inmediato: **pedidos, pagos y notificaciones**.
+3. Si pagos y pedidos son críticos para los ingresos del cliente, **su calidad no es negociable**; por lo tanto se justifica invertir en pruebas en esos flujos.
+4. Si el equipo no tiene experiencia con pagos, **usar un proveedor reduce riesgo y tiempo**.
+5. Si el volumen esperado es bajo, **un monolito modular es suficiente** y deja la puerta abierta a evolucionar después.
+6. Por lo tanto, la combinación más racional es **MVP + terceros + monolito modular + pruebas en flujos críticos**.
