@@ -322,5 +322,16 @@ Fue **moderadamente difícil**. La dificultad no estuvo en identificar las opcio
 - La mejor decisión depende del **contexto y las restricciones**, no de una regla universal. Un monolito es correcto aquí, pero podría no serlo en otro proyecto.
 - Es fundamental **identificar qué es crítico** (lo que no se negocia) y qué es deseable (lo que se puede diferir).
 - Las decisiones deben **documentarse y justificarse**, porque sus consecuencias se mantienen en el tiempo.
-- Los trade-offs están **conectados entre sí**: reducir el alcance libera tiempo que permite invertir en calidad.  
+- Los trade-offs están **conectados entre sí**: reducir el alcance libera tiempo que permite invertir en calidad.
+
+### 6.3 ¿Cómo aplicaron comunicación asertiva?
+
+| Técnica | Cómo se aplicó |
+|---------|----------------|
+| Expresión clara de ideas | Cada integrante expuso su postura con argumentos y datos, sin imponerla |
+| Escucha activa | Se reformularon las ideas de los demás antes de responder |
+| Respeto y tono profesional | Se criticaron las ideas y no a las personas |
+| Uso de evidencia | Las decisiones se apoyaron en horas estimadas, riesgos y principios de ingeniería |
+| Negociación con concesiones | Cada integrante cedió en algo y obtuvo algo a cambio |
+| Transparencia con el cliente | Se decidió comunicar el alcance real de forma honesta y anticipada |
 
